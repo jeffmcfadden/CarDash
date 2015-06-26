@@ -3,7 +3,7 @@
 //  CarDashTests
 //
 //  Created by Jeff McFadden on 7/12/14.
-//  Copyright (c) 2014 ForgeApps. All rights reserved.
+//  Copyright (c) 2015 Jeff McFadden. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

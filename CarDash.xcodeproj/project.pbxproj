@@ -19,6 +19,10 @@
 		6F468FE41971BA5B00D10FD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F468FCC1971BA5B00D10FD2 /* UIKit.framework */; };
 		6F468FEC1971BA5C00D10FD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F468FEA1971BA5C00D10FD2 /* InfoPlist.strings */; };
 		6F468FEE1971BA5C00D10FD2 /* CarDashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F468FED1971BA5C00D10FD2 /* CarDashTests.m */; };
+		6F468FF81971BA7700D10FD2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F468FF71971BA7700D10FD2 /* MainInterface.storyboard */; };
+		6F468FFB1971BAD300D10FD2 /* FADashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F468FFA1971BAD300D10FD2 /* FADashboardViewController.m */; };
+		6F468FFE1971BB4C00D10FD2 /* FAOBD2Communicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F468FFD1971BB4C00D10FD2 /* FAOBD2Communicator.m */; };
+		6FA52D141971F4AC001E473E /* FASettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA52D131971F4AC001E473E /* FASettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		6F468FE91971BA5C00D10FD2 /* CarDashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarDashTests-Info.plist"; sourceTree = "<group>"; };
 		6F468FEB1971BA5C00D10FD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6F468FED1971BA5C00D10FD2 /* CarDashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarDashTests.m; sourceTree = "<group>"; };
+		6F468FF71971BA7700D10FD2 /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		6F468FF91971BAD300D10FD2 /* FADashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FADashboardViewController.h; sourceTree = "<group>"; };
+		6F468FFA1971BAD300D10FD2 /* FADashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FADashboardViewController.m; sourceTree = "<group>"; };
+		6F468FFC1971BB4C00D10FD2 /* FAOBD2Communicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAOBD2Communicator.h; sourceTree = "<group>"; };
+		6F468FFD1971BB4C00D10FD2 /* FAOBD2Communicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAOBD2Communicator.m; sourceTree = "<group>"; };
+		6FA52D121971F4AC001E473E /* FASettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FASettingsViewController.h; sourceTree = "<group>"; };
+		6FA52D131971F4AC001E473E /* FASettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FASettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +118,15 @@
 		6F468FCE1971BA5B00D10FD2 /* CarDash */ = {
 			isa = PBXGroup;
 			children = (
+				6F468FFC1971BB4C00D10FD2 /* FAOBD2Communicator.h */,
+				6F468FFD1971BB4C00D10FD2 /* FAOBD2Communicator.m */,
 				6F468FD71971BA5B00D10FD2 /* FAAppDelegate.h */,
 				6F468FD81971BA5B00D10FD2 /* FAAppDelegate.m */,
+				6F468FF91971BAD300D10FD2 /* FADashboardViewController.h */,
+				6F468FFA1971BAD300D10FD2 /* FADashboardViewController.m */,
+				6FA52D121971F4AC001E473E /* FASettingsViewController.h */,
+				6FA52D131971F4AC001E473E /* FASettingsViewController.m */,
+				6F468FF71971BA7700D10FD2 /* MainInterface.storyboard */,
 				6F468FDA1971BA5B00D10FD2 /* Images.xcassets */,
 				6F468FCF1971BA5B00D10FD2 /* Supporting Files */,
 			);
@@ -221,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F468FD31971BA5B00D10FD2 /* InfoPlist.strings in Resources */,
+				6F468FF81971BA7700D10FD2 /* MainInterface.storyboard in Resources */,
 				6F468FDB1971BA5B00D10FD2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,8 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA52D141971F4AC001E473E /* FASettingsViewController.m in Sources */,
 				6F468FD51971BA5B00D10FD2 /* main.m in Sources */,
 				6F468FD91971BA5B00D10FD2 /* FAAppDelegate.m in Sources */,
+				6F468FFE1971BB4C00D10FD2 /* FAOBD2Communicator.m in Sources */,
+				6F468FFB1971BAD300D10FD2 /* FADashboardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +462,7 @@
 				6F468FF31971BA5C00D10FD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F468FF41971BA5C00D10FD2 /* Build configuration list for PBXNativeTarget "CarDashTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +471,7 @@
 				6F468FF61971BA5C00D10FD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -58,7 +58,7 @@
     // Do any additional setup after loading the view.
     
     self.mph = 0;
-    self.gph = 0.01;
+    self.gph = 2.01;
     
     self.mpgHistory = [@[] mutableCopy];
     self.mpgLongHistory = [@[] mutableCopy];

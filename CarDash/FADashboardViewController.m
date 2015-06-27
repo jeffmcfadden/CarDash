@@ -95,8 +95,8 @@
 - (void)updateMPGValues
 {
     CGFloat mpg;
-    if (self.mph == 0) {
-        mpg = 0;
+    if (self.mph < 5) {
+        return; //Slow speeds render the data too meaningless. 
     }else{
         mpg = self.mph/self.gph;
     }
@@ -108,7 +108,7 @@
         [self.mpgHistory removeObjectAtIndex:0];
     }
     
-    if (self.mpgLongHistory.count > 120) {
+    if (self.mpgLongHistory.count > 600) {
         [self.mpgLongHistory removeObjectAtIndex:0];
     }
     
@@ -131,7 +131,7 @@
 {
     [self.fuelLevelHistory addObject:[NSNumber numberWithDouble:self.fuelLevel]];
     
-    if (self.fuelLevelHistory.count > 60) {
+    if (self.fuelLevelHistory.count > 120) {
         [self.fuelLevelHistory removeObjectAtIndex:0];
     }
     
@@ -142,9 +142,10 @@
     
     NSInteger averageFuelLevel = longTotal / self.fuelLevelHistory.count;
     
-    NSInteger fuelTakeCapacity = 21.0;
+    // TODO: Make this a preference or something
+    NSInteger fuelTankCapacity = 21.0;
     
-    NSInteger range = ( fuelTakeCapacity * ( averageFuelLevel / 100.0 ) ) * self.mpgLongAvg;
+    NSInteger range = ( fuelTankCapacity * ( averageFuelLevel / 100.0 ) ) * self.mpgLongAvg;
     
     dispatch_async(dispatch_get_main_queue(), ^{
         self.fuelLevelMeterView.currentValue = averageFuelLevel;

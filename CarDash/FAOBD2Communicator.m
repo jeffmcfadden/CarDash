@@ -159,7 +159,7 @@ NSString *const kFAOBD2PIDDataUpdatedNotification = @"kFAOBD2PIDDataUpdatedNotif
         self.readyToSend = NO;
         NSString *sensorPID = self.sensorPIDsToScan[self.currentPIDIndex];
         
-        //DLog(@"askForPIDs %@", sensorPID);
+        DLog(@"askForPIDs %@", sensorPID);
         
         NSString *message  = [NSString stringWithFormat:@"01%@1\r", sensorPID];
         NSData *data = [[NSData alloc] initWithData:[message dataUsingEncoding:NSASCIIStringEncoding]];
@@ -199,7 +199,7 @@ NSString *const kFAOBD2PIDDataUpdatedNotification = @"kFAOBD2PIDDataUpdatedNotif
                         NSString *output = [[NSString alloc] initWithBytes:buffer length:len encoding:NSASCIIStringEncoding];
                         
                         if (nil != output) {
-                            //DLog(@"server said: %@", output);
+                            DLog(@"server said: %@", output);
                             
                             [output enumerateLinesUsingBlock:^(NSString *line, BOOL *stop){
                                 
@@ -212,10 +212,10 @@ NSString *const kFAOBD2PIDDataUpdatedNotification = @"kFAOBD2PIDDataUpdatedNotif
                             if ([output isEqualToString:@"SEARCHING...\r"]) {
                                 //DLog( @"Said searching." );
                             }else{
-                                self.readyToSend = YES;
+                                //self.readyToSend = YES;
                             }
                         }else{
-                            self.readyToSend = YES;
+                            //self.readyToSend = YES;
                         }
                     }
                 }
@@ -246,6 +246,11 @@ NSString *const kFAOBD2PIDDataUpdatedNotification = @"kFAOBD2PIDDataUpdatedNotif
 
 - (void)parseResponse:(NSString *)response
 {
+    if ([response isEqualToString:@">"]) {
+        self.readyToSend = YES;
+        return;
+    }
+    
     if (response.length < 5) {
         //DLog( @"Too short of a response line to care." );
         return;

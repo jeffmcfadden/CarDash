@@ -32,4 +32,7 @@ FOUNDATION_EXPORT NSString *const kFAOBD2PIDControlModuleVoltage;
 - (void)restart;
 - (void)stop;
 
+- (void)startDemo;
+- (void)stopDemo;
+
 @end

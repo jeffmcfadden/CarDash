@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F2261C41B3E13170007EAE1 /* FAHorizontalMeterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2261C31B3E13170007EAE1 /* FAHorizontalMeterViewController.m */; };
+		6F2261C61B3E17A80007EAE1 /* FAHorizontalMeterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2261C51B3E17A80007EAE1 /* FAHorizontalMeterViewController.xib */; };
+		6F2261C91B3E42050007EAE1 /* FAHorizontalMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2261C81B3E42050007EAE1 /* FAHorizontalMeterView.m */; };
+		6F2261D01B3EFB450007EAE1 /* Orbitron Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F2261CB1B3EFB450007EAE1 /* Orbitron Black.otf */; };
+		6F2261D11B3EFB450007EAE1 /* Orbitron Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F2261CC1B3EFB450007EAE1 /* Orbitron Bold.otf */; };
+		6F2261D21B3EFB450007EAE1 /* Orbitron Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F2261CD1B3EFB450007EAE1 /* Orbitron Light.otf */; };
+		6F2261D31B3EFB450007EAE1 /* Orbitron Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F2261CE1B3EFB450007EAE1 /* Orbitron Medium.otf */; };
+		6F2261D41B3EFB450007EAE1 /* Raleway Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F2261CF1B3EFB450007EAE1 /* Raleway Thin.otf */; };
 		6F468FC91971BA5B00D10FD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F468FC81971BA5B00D10FD2 /* Foundation.framework */; };
 		6F468FCB1971BA5B00D10FD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F468FCA1971BA5B00D10FD2 /* CoreGraphics.framework */; };
 		6F468FCD1971BA5B00D10FD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F468FCC1971BA5B00D10FD2 /* UIKit.framework */; };
@@ -36,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F2261C21B3E13170007EAE1 /* FAHorizontalMeterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAHorizontalMeterViewController.h; sourceTree = "<group>"; };
+		6F2261C31B3E13170007EAE1 /* FAHorizontalMeterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAHorizontalMeterViewController.m; sourceTree = "<group>"; };
+		6F2261C51B3E17A80007EAE1 /* FAHorizontalMeterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAHorizontalMeterViewController.xib; sourceTree = "<group>"; };
+		6F2261C71B3E42050007EAE1 /* FAHorizontalMeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAHorizontalMeterView.h; sourceTree = "<group>"; };
+		6F2261C81B3E42050007EAE1 /* FAHorizontalMeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAHorizontalMeterView.m; sourceTree = "<group>"; };
+		6F2261CB1B3EFB450007EAE1 /* Orbitron Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron Black.otf"; sourceTree = "<group>"; };
+		6F2261CC1B3EFB450007EAE1 /* Orbitron Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron Bold.otf"; sourceTree = "<group>"; };
+		6F2261CD1B3EFB450007EAE1 /* Orbitron Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron Light.otf"; sourceTree = "<group>"; };
+		6F2261CE1B3EFB450007EAE1 /* Orbitron Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron Medium.otf"; sourceTree = "<group>"; };
+		6F2261CF1B3EFB450007EAE1 /* Raleway Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway Thin.otf"; sourceTree = "<group>"; };
 		6F468FC51971BA5B00D10FD2 /* CarDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F468FC81971BA5B00D10FD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6F468FCA1971BA5B00D10FD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,6 +103,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F2261CA1B3EFB450007EAE1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6F2261CB1B3EFB450007EAE1 /* Orbitron Black.otf */,
+				6F2261CC1B3EFB450007EAE1 /* Orbitron Bold.otf */,
+				6F2261CD1B3EFB450007EAE1 /* Orbitron Light.otf */,
+				6F2261CE1B3EFB450007EAE1 /* Orbitron Medium.otf */,
+				6F2261CF1B3EFB450007EAE1 /* Raleway Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		6F468FBC1971BA5B00D10FD2 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +148,7 @@
 		6F468FCE1971BA5B00D10FD2 /* CarDash */ = {
 			isa = PBXGroup;
 			children = (
+				6F2261CA1B3EFB450007EAE1 /* Fonts */,
 				6F468FFC1971BB4C00D10FD2 /* FAOBD2Communicator.h */,
 				6F468FFD1971BB4C00D10FD2 /* FAOBD2Communicator.m */,
 				6F468FD71971BA5B00D10FD2 /* FAAppDelegate.h */,
@@ -127,6 +158,11 @@
 				6FA52D121971F4AC001E473E /* FASettingsViewController.h */,
 				6FA52D131971F4AC001E473E /* FASettingsViewController.m */,
 				6F468FF71971BA7700D10FD2 /* MainInterface.storyboard */,
+				6F2261C21B3E13170007EAE1 /* FAHorizontalMeterViewController.h */,
+				6F2261C31B3E13170007EAE1 /* FAHorizontalMeterViewController.m */,
+				6F2261C51B3E17A80007EAE1 /* FAHorizontalMeterViewController.xib */,
+				6F2261C71B3E42050007EAE1 /* FAHorizontalMeterView.h */,
+				6F2261C81B3E42050007EAE1 /* FAHorizontalMeterView.m */,
 				6F468FDA1971BA5B00D10FD2 /* Images.xcassets */,
 				6F468FCF1971BA5B00D10FD2 /* Supporting Files */,
 			);
@@ -240,7 +276,13 @@
 			files = (
 				6F468FD31971BA5B00D10FD2 /* InfoPlist.strings in Resources */,
 				6F468FF81971BA7700D10FD2 /* MainInterface.storyboard in Resources */,
+				6F2261D31B3EFB450007EAE1 /* Orbitron Medium.otf in Resources */,
+				6F2261D41B3EFB450007EAE1 /* Raleway Thin.otf in Resources */,
+				6F2261D11B3EFB450007EAE1 /* Orbitron Bold.otf in Resources */,
 				6F468FDB1971BA5B00D10FD2 /* Images.xcassets in Resources */,
+				6F2261C61B3E17A80007EAE1 /* FAHorizontalMeterViewController.xib in Resources */,
+				6F2261D21B3EFB450007EAE1 /* Orbitron Light.otf in Resources */,
+				6F2261D01B3EFB450007EAE1 /* Orbitron Black.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FA52D141971F4AC001E473E /* FASettingsViewController.m in Sources */,
+				6F2261C41B3E13170007EAE1 /* FAHorizontalMeterViewController.m in Sources */,
 				6F468FD51971BA5B00D10FD2 /* main.m in Sources */,
 				6F468FD91971BA5B00D10FD2 /* FAAppDelegate.m in Sources */,
+				6F2261C91B3E42050007EAE1 /* FAHorizontalMeterView.m in Sources */,
 				6F468FFE1971BB4C00D10FD2 /* FAOBD2Communicator.m in Sources */,
 				6F468FFB1971BAD300D10FD2 /* FADashboardViewController.m in Sources */,
 			);
@@ -385,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CarDash/CarDash-Prefix.pch";
 				INFOPLIST_FILE = "CarDash/CarDash-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -398,6 +443,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CarDash/CarDash-Prefix.pch";
 				INFOPLIST_FILE = "CarDash/CarDash-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

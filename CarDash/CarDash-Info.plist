@@ -24,6 +24,16 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Orbitron Black.otf</string>
+		<string>Orbitron Bold.otf</string>
+		<string>Orbitron Medium.otf</string>
+		<string>Orbitron Light.otf</string>
+		<string>Raleway Thin.otf</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>MainInterface</string>
 	<key>UIMainStoryboardFile</key>
 	<string>MainInterface</string>
 	<key>UIRequiredDeviceCapabilities</key>

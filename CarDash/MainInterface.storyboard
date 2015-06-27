@@ -4,7 +4,13 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Orbitron Medium.otf">
+            <string>Orbitron-Medium</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Dashboard-->
         <scene sceneID="Vgt-fi-EyR">
@@ -18,27 +24,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1U-If-7WE">
-                                <rect key="frame" x="67" y="20" width="67" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MPH:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb4-5q-cN2">
-                                <rect key="frame" x="20" y="20" width="44" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GPH:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8F-D1-oaN">
-                                <rect key="frame" x="142" y="20" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="33.4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="FhK-Vj-mrX">
-                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="214"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="FhK-Vj-mrX">
+                                <rect key="frame" x="0.0" y="50" width="331" height="520"/>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="200"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=compact" fixedFrame="YES">
@@ -48,54 +36,477 @@
                                     <rect key="frame" x="118" y="78" width="502" height="184"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuS-1Q-7ZE">
-                                <rect key="frame" x="192" y="20" width="135" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVe-Te-2jS">
-                                <rect key="frame" x="445" y="20" width="135" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deE-bv-HwO">
+                                <rect key="frame" x="521" y="556" width="80" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="5PI-fS-NV3"/>
-                                    <constraint firstAttribute="width" constant="135" id="KfA-1X-xgo"/>
+                                    <constraint firstAttribute="height" constant="44" id="5V9-vq-eXZ"/>
+                                    <constraint firstAttribute="width" constant="80" id="cvY-Tn-pJL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deE-bv-HwO">
-                                <rect key="frame" x="523" y="550" width="57" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="5V9-vq-eXZ"/>
-                                    <constraint firstAttribute="width" constant="57" id="cvY-Tn-pJL"/>
-                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                                 <state key="normal" title="Settings">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="showSettings:" destination="gy4-0c-Hx9" eventType="touchUpInside" id="hrc-eS-2iO"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NwT-nc-7hg" customClass="FAHorizontalMeterView">
+                                <rect key="frame" x="0.0" y="570" width="331" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mYN-Xc-Ael"/>
+                                    <constraint firstAttribute="height" constant="30" id="psF-TC-MEK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="400"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dangerMinValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dangerMaxValue">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="warningMinValue">
+                                        <real key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="warningMaxValue">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="normalMinValue">
+                                        <real key="value" value="61"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="normalMaxValue">
+                                        <real key="value" value="600"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dangerColor">
+                                        <color key="value" red="0.77647058820000003" green="0.0" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="warningColor">
+                                        <color key="value" red="1" green="0.64596809420000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                        <color key="value" red="0.13268257959999999" green="0.77110669890000005" blue="0.12784602619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="currentValue">
+                                        <real key="value" value="120"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="neutralColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="valueName" value="Range"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mYN-Xc-Ael"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qD-bh-k9R" userLabel="Meter Container View">
+                                <rect key="frame" x="360" y="185" width="240" height="230"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufX-je-YcG" userLabel="Coolant Horizontal Meter View" customClass="FAHorizontalMeterView">
+                                        <rect key="frame" x="20" y="20" width="220" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Xdl-Ig-h1E"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="npf-On-yud"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                <real key="value" value="71"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                <real key="value" value="300"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="dangerMinValue">
+                                                <real key="value" value="250"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="dangerMaxValue">
+                                                <real key="value" value="999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="warningMinValue">
+                                                <real key="value" value="230"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="warningMaxValue">
+                                                <real key="value" value="250"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="normalMinValue">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="normalMaxValue">
+                                                <real key="value" value="230"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="dangerColor">
+                                                <color key="value" red="0.74473411599999995" green="0.0" blue="0.0078147260510000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="warningColor">
+                                                <color key="value" red="1" green="0.64596809420974921" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.13268257959999999" green="0.77110669890000005" blue="0.12784602619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="currentValue">
+                                                <real key="value" value="192"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="neutralColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="valueName" value="Coolant Temperature"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="npf-On-yud"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bbu-Bx-BWH" customClass="FAHorizontalMeterView">
+                                        <rect key="frame" x="20" y="60" width="220" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="pzP-f0-UYA"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                <real key="value" value="200"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="dangerMinValue">
+                                                <real key="value" value="250"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="dangerMaxValue">
+                                                <real key="value" value="999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="warningMinValue">
+                                                <real key="value" value="230"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="warningMaxValue">
+                                                <real key="value" value="250"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="normalMinValue">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="normalMaxValue">
+                                                <real key="value" value="230"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="dangerColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="warningColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="currentValue">
+                                                <real key="value" value="106"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="neutralColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="valueName" value="Intake Temperature"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pzP-f0-UYA"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXo-4W-oE1" customClass="FAHorizontalMeterView">
+                                        <rect key="frame" x="20" y="100" width="220" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="SjQ-YT-lIT"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                <real key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="dangerMinValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="dangerMaxValue">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="warningMinValue">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="warningMaxValue">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="normalMinValue">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="normalMaxValue">
+                                                <real key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="dangerColor">
+                                                <color key="value" red="0.77647058820000003" green="0.0" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="warningColor">
+                                                <color key="value" red="1" green="0.64596809420000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.13268257959999999" green="0.77110669890000005" blue="0.12784602619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="currentValue">
+                                                <real key="value" value="80"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="neutralColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="valueName" value="Fuel Level"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="SjQ-YT-lIT"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8va-iU-HNG" customClass="FAHorizontalMeterView">
+                                        <rect key="frame" x="20" y="140" width="220" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="pN4-7C-AP1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                <real key="value" value="35"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="dangerMinValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="dangerMaxValue">
+                                                <real key="value" value="11"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="warningMinValue">
+                                                <real key="value" value="11"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="warningMaxValue">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="normalMinValue">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="normalMaxValue">
+                                                <real key="value" value="35"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="dangerColor">
+                                                <color key="value" red="0.77647058820000003" green="0.0" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="warningColor">
+                                                <color key="value" red="1" green="0.64596809420000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.13268257959999999" green="0.77110669890000005" blue="0.12784602619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="currentValue">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="neutralColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="valueName" value="Instant MPG"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pN4-7C-AP1"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poS-al-rgM" customClass="FAHorizontalMeterView">
+                                        <rect key="frame" x="20" y="180" width="220" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="VKL-1U-FbU"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                <real key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="dangerMinValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="dangerMaxValue">
+                                                <real key="value" value="11"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="warningMinValue">
+                                                <real key="value" value="11"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="warningMaxValue">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="normalMinValue">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="normalMaxValue">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="dangerColor">
+                                                <color key="value" red="0.77647058820000003" green="0.0" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="warningColor">
+                                                <color key="value" red="1" green="0.64596809420000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.13268257959999999" green="0.77110669890000005" blue="0.12784602619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="currentValue">
+                                                <real key="value" value="12.199999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="neutralColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="valueName" value="Voltage"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="VKL-1U-FbU"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Bbu-Bx-BWH" firstAttribute="top" secondItem="IXo-4W-oE1" secondAttribute="top" constant="-40" id="1rP-6p-1IJ"/>
+                                    <constraint firstItem="Bbu-Bx-BWH" firstAttribute="height" secondItem="ufX-je-YcG" secondAttribute="height" id="B6N-eW-6DC"/>
+                                    <constraint firstItem="poS-al-rgM" firstAttribute="trailing" secondItem="8va-iU-HNG" secondAttribute="trailing" id="BfC-ss-xxi"/>
+                                    <constraint firstItem="8va-iU-HNG" firstAttribute="trailing" secondItem="IXo-4W-oE1" secondAttribute="trailing" id="CmJ-e7-brN"/>
+                                    <constraint firstItem="Bbu-Bx-BWH" firstAttribute="trailing" secondItem="IXo-4W-oE1" secondAttribute="trailing" id="FCq-Ds-X7k"/>
+                                    <constraint firstItem="IXo-4W-oE1" firstAttribute="top" secondItem="Bbu-Bx-BWH" secondAttribute="bottom" constant="10" id="IG1-j7-ObV"/>
+                                    <constraint firstItem="8va-iU-HNG" firstAttribute="width" secondItem="IXo-4W-oE1" secondAttribute="width" id="IG4-pZ-P9y"/>
+                                    <constraint firstItem="poS-al-rgM" firstAttribute="height" secondItem="8va-iU-HNG" secondAttribute="height" id="Ibh-DO-zwV"/>
+                                    <constraint firstItem="poS-al-rgM" firstAttribute="top" secondItem="8va-iU-HNG" secondAttribute="bottom" constant="10" id="JB8-9S-YeM"/>
+                                    <constraint firstItem="Bbu-Bx-BWH" firstAttribute="top" secondItem="ufX-je-YcG" secondAttribute="bottom" constant="10" id="JVO-ei-4uu"/>
+                                    <constraint firstItem="8va-iU-HNG" firstAttribute="height" secondItem="IXo-4W-oE1" secondAttribute="height" id="K4C-hZ-xXc"/>
+                                    <constraint firstAttribute="bottom" secondItem="poS-al-rgM" secondAttribute="bottom" constant="20" id="KXr-Uq-EbA"/>
+                                    <constraint firstAttribute="trailing" secondItem="ufX-je-YcG" secondAttribute="trailing" id="Obi-pb-Wfo"/>
+                                    <constraint firstItem="Bbu-Bx-BWH" firstAttribute="trailing" secondItem="ufX-je-YcG" secondAttribute="trailing" id="USM-Sp-dvU"/>
+                                    <constraint firstItem="Bbu-Bx-BWH" firstAttribute="width" secondItem="IXo-4W-oE1" secondAttribute="width" id="YLI-lb-Joh"/>
+                                    <constraint firstItem="Bbu-Bx-BWH" firstAttribute="height" secondItem="IXo-4W-oE1" secondAttribute="height" id="ZSn-Ji-kFJ"/>
+                                    <constraint firstItem="Bbu-Bx-BWH" firstAttribute="width" secondItem="ufX-je-YcG" secondAttribute="width" id="ZWN-ab-O15"/>
+                                    <constraint firstItem="poS-al-rgM" firstAttribute="width" secondItem="8va-iU-HNG" secondAttribute="width" id="aj6-OL-feP"/>
+                                    <constraint firstItem="ufX-je-YcG" firstAttribute="top" secondItem="5qD-bh-k9R" secondAttribute="top" constant="20" id="c93-2P-dEg"/>
+                                    <constraint firstItem="ufX-je-YcG" firstAttribute="leading" secondItem="5qD-bh-k9R" secondAttribute="leading" constant="20" id="kYa-dn-ZaJ"/>
+                                    <constraint firstItem="8va-iU-HNG" firstAttribute="top" secondItem="IXo-4W-oE1" secondAttribute="bottom" constant="10" id="zpp-tc-1Wk"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1rP-6p-1IJ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qvy-3C-8JO" customClass="FAHorizontalMeterView">
+                                <rect key="frame" x="0.0" y="532" width="331" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="l7N-Uj-L8K"/>
+                                    <constraint firstAttribute="height" constant="30" id="pGr-cv-dfV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dangerMinValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dangerMaxValue">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="warningMinValue">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="warningMaxValue">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="normalMinValue">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="normalMaxValue">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dangerColor">
+                                        <color key="value" red="0.77647058820000003" green="0.0" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="warningColor">
+                                        <color key="value" red="1" green="0.64596809420000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                        <color key="value" red="0.13268257959999999" green="0.77110669890000005" blue="0.12784602619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="currentValue">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="neutralColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="valueName" value="Miles Per Gallon"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="l7N-Uj-L8K"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="BVe-Te-2jS" secondAttribute="trailing" constant="20" id="5bk-jg-QfH"/>
                             <constraint firstAttribute="trailing" secondItem="FhK-Vj-mrX" secondAttribute="trailing" constant="20" id="9rL-R6-wyY"/>
-                            <constraint firstItem="M3d-NR-YTT" firstAttribute="top" secondItem="FhK-Vj-mrX" secondAttribute="bottom" constant="-49" id="KBD-YW-wGy"/>
-                            <constraint firstItem="FhK-Vj-mrX" firstAttribute="leading" secondItem="CIV-iW-wnx" secondAttribute="leading" constant="20" id="YS0-a3-JUm"/>
-                            <constraint firstItem="BVe-Te-2jS" firstAttribute="top" secondItem="g9R-Y4-WSU" secondAttribute="bottom" id="oAG-xu-aDt"/>
-                            <constraint firstItem="M3d-NR-YTT" firstAttribute="top" secondItem="deE-bv-HwO" secondAttribute="bottom" constant="20" id="qu5-bv-1i6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="deE-bv-HwO" secondAttribute="trailing" constant="4" id="voR-c0-Ui1"/>
+                            <constraint firstItem="NwT-nc-7hg" firstAttribute="leading" secondItem="CIV-iW-wnx" secondAttribute="leading" id="D1V-QF-UFo"/>
+                            <constraint firstItem="M3d-NR-YTT" firstAttribute="top" secondItem="NwT-nc-7hg" secondAttribute="bottom" id="Ecr-bm-fcn"/>
+                            <constraint firstItem="Qvy-3C-8JO" firstAttribute="width" secondItem="NwT-nc-7hg" secondAttribute="width" id="Epe-m8-VJH"/>
+                            <constraint firstItem="NwT-nc-7hg" firstAttribute="top" secondItem="Qvy-3C-8JO" secondAttribute="bottom" constant="8" id="Gfj-5F-FlQ"/>
+                            <constraint firstItem="M3d-NR-YTT" firstAttribute="top" secondItem="FhK-Vj-mrX" secondAttribute="bottom" constant="30" id="KBD-YW-wGy"/>
+                            <constraint firstItem="FhK-Vj-mrX" firstAttribute="width" secondItem="CIV-iW-wnx" secondAttribute="width" multiplier="0.55" constant="1" id="PpO-4f-Rmo"/>
+                            <constraint firstItem="FhK-Vj-mrX" firstAttribute="leading" secondItem="CIV-iW-wnx" secondAttribute="leading" id="YS0-a3-JUm"/>
+                            <constraint firstItem="NwT-nc-7hg" firstAttribute="width" secondItem="FhK-Vj-mrX" secondAttribute="width" id="a4L-2p-axQ"/>
+                            <constraint firstItem="Qvy-3C-8JO" firstAttribute="leading" secondItem="CIV-iW-wnx" secondAttribute="leading" id="bMl-vt-jPK"/>
+                            <constraint firstItem="5qD-bh-k9R" firstAttribute="width" secondItem="CIV-iW-wnx" secondAttribute="width" multiplier="0.4" id="gs5-Zq-JPU"/>
+                            <constraint firstItem="5qD-bh-k9R" firstAttribute="leading" secondItem="FhK-Vj-mrX" secondAttribute="trailing" constant="8" id="ktc-FT-C5D"/>
+                            <constraint firstItem="M3d-NR-YTT" firstAttribute="top" secondItem="deE-bv-HwO" secondAttribute="bottom" id="qu5-bv-1i6"/>
+                            <constraint firstAttribute="centerY" secondItem="5qD-bh-k9R" secondAttribute="centerY" id="rww-qC-P1I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="deE-bv-HwO" secondAttribute="trailing" id="voR-c0-Ui1"/>
+                            <constraint firstItem="FhK-Vj-mrX" firstAttribute="top" secondItem="g9R-Y4-WSU" secondAttribute="bottom" constant="30" id="wLK-yq-NEP"/>
+                            <constraint firstItem="Qvy-3C-8JO" firstAttribute="height" secondItem="NwT-nc-7hg" secondAttribute="height" id="y1D-3j-rDE"/>
                             <constraint firstItem="FhK-Vj-mrX" firstAttribute="top" secondItem="g9R-Y4-WSU" secondAttribute="bottom" constant="-20" id="z4f-dK-tOE"/>
+                            <constraint firstAttribute="trailing" secondItem="5qD-bh-k9R" secondAttribute="trailing" id="zps-6E-3BL"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9rL-R6-wyY"/>
+                                <exclude reference="z4f-dK-tOE"/>
+                                <exclude reference="ktc-FT-C5D"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="MPG" id="RMg-NS-nbJ"/>
                     <connections>
-                        <outlet property="gphLabel" destination="QuS-1Q-7ZE" id="HYs-lJ-nKq"/>
-                        <outlet property="mpgLabel" destination="FhK-Vj-mrX" id="c32-36-1vg"/>
-                        <outlet property="mpgShortLabel" destination="BVe-Te-2jS" id="0iJ-Ui-9aJ"/>
-                        <outlet property="mphLabel" destination="v1U-If-7WE" id="ohE-aR-S4q"/>
+                        <outlet property="coolantTemperatureMeterView" destination="ufX-je-YcG" id="UUf-rz-SBn"/>
+                        <outlet property="fuelLevelMeterView" destination="IXo-4W-oE1" id="lqc-Us-Vlx"/>
+                        <outlet property="instantMPGMeterView" destination="8va-iU-HNG" id="a13-o9-xVv"/>
+                        <outlet property="intakeTemperatureMeterView" destination="Bbu-Bx-BWH" id="XPU-Pz-Iaq"/>
+                        <outlet property="mpgMeterView" destination="Qvy-3C-8JO" id="Cj8-6q-HKF"/>
+                        <outlet property="mphLabel" destination="FhK-Vj-mrX" id="O5c-XC-i5H"/>
+                        <outlet property="rangeMeterView" destination="NwT-nc-7hg" id="VyW-hc-DFq"/>
+                        <outlet property="voltageMeterView" destination="poS-al-rgM" id="Pmz-3S-YVe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4m-yT-KtQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -162,12 +573,6 @@
                                     <action selector="restart:" destination="Bco-wM-nyw" eventType="touchUpInside" id="KE1-LK-myY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4F-2O-6kI">
-                                <rect key="frame" x="20" y="20" width="564" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDQ-Ti-teT">
                                 <rect key="frame" x="40" y="212" width="37" height="30"/>
                                 <constraints>
@@ -179,6 +584,30 @@
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="Bco-wM-nyw" eventType="touchUpInside" id="gGr-F6-q18"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4F-2O-6kI">
+                                <rect key="frame" x="20" y="20" width="564" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7J-cS-k92">
+                                <rect key="frame" x="146" y="63" width="78" height="30"/>
+                                <state key="normal" title="Start Demo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startDemo:" destination="Bco-wM-nyw" eventType="touchUpInside" id="YT7-Um-mn5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIa-ya-Kcs">
+                                <rect key="frame" x="146" y="115" width="78" height="30"/>
+                                <state key="normal" title="Stop Demo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopDemo:" destination="Bco-wM-nyw" eventType="touchUpInside" id="u3Y-oD-9QG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -198,6 +627,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="xuF-Pj-BG1"/>
+                    <connections>
+                        <outlet property="statusLabel" destination="Z4F-2O-6kI" id="LiP-ct-TZV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbo-MU-CN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
